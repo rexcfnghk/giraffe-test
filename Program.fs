@@ -24,6 +24,7 @@ let webApp =
         GET >=>
             choose [
                 route "/" >=> razorHtmlView "Index" { Text = "Hello world, from Giraffe!" }
+                route "/Students" >=> json "Hello world"
             ]
         setStatusCode 404 >=> text "Not Found" ]
 

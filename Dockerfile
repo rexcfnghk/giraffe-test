@@ -1,5 +1,5 @@
 
-FROM microsoft/aspnetcore:1
+FROM microsoft/aspnetcore:2.0-nanoserver-1709
 LABEL Name=giraffe-test Version=0.0.1 
 ARG source=.
 WORKDIR /app
